@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Sign in · EntireBazar Manager</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="card auth-card">
+      <h1>EntireBazar Manager</h1>
+      <p class="muted">Sign in with your admin account.</p>
+      <form id="loginForm" class="fields">
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" autocomplete="current-password" required>
+        </div>
+        <div id="message" class="form-error hidden" role="alert"></div>
+        <button id="submit" class="btn btn-primary" type="submit">Sign in</button>
+        <button id="reset" class="btn btn-sm" type="button">Forgot password?</button>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="js/pages/login.js"></script>
+</body>
+</html>
